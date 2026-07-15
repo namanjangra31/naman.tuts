@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+        body{
+            background-color: rgb(82, 82, 82);
+        }
+
+        .navbar {
+            background-color: rgb(43, 43, 43);
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: hidden;
+        }
+        /* If the content spills out of the box → overflow fit content inside its container.  */
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 20px;
+            border: rgb(228, 61, 61) solid 2px;
+            border-radius: 20px;
+        }
+
+        .navbar li a {
+            padding: 40px;
+            text-decoration: none;
+            color: beige;
+        }
+
+        .navbar li a:hover {
+            color: red;
+
+        }
+
+        .search {
+            float: right;
+            color: beige;
+            padding-right: 275px;
+            padding-top: 22px;
+        }
+
+        .search input  {
+            border: black solid 2px;
+            border-radius: 8px;
+            padding: 2px ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1></h1>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Home" target="_blank">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search here">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>

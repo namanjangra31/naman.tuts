@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+
+   .container{
+    border: 2px solid black;
+    width: 100%;
+    height: 480px;
+    display: flex;
+
+    /* flex-direction: row; is by delfault  */
+     flex-direction: row ;
+    /* flex-direction: row-reverse; 
+    flex-direction: column;
+    flex-direction: row-reverse;
+    flex-direction: column-reverse;  */
+    /* You can commentout them and check there functionalities  */
+    /* flex  direction is used for giving direction to flex items */
+
+    /* flex-wrap: wrap;  */
+    /* flex-wrap: wrap-reverse;  */
+    /* flex wrap is used when we need to set elements inside the screen ,when we set responsiveness for phone ,tab etc */
+
+     flex-flow: row wrap;   
+    /* Both flex direction and flex wrap can be defined in this  */
+
+        justify-content: center;
+        justify-content: end;
+        /* end  means shift all elements to the opp direction (right side)  */
+        justify-content: space-between;
+        /* In space between space has been occur btw the elements not in left and right side  */
+        justify-content: space-evenly;
+        /* In space evenly all the space is given equally to all the elements (included right and left side)  */
+        justify-content: space-around;
+        /* In space around the space is given individually to each element  */
+        /* This is for spacing between the elements  */
+        /* You can check all the properties by commenting out them  */
+
+        align-items: flex-start; 
+        align-items: flex-end;
+        align-items: stretch;
+        /* stretch is use for stretching boxes from top to bottom same as container height , for checking its functionality make sure that you did't give boxes there height */
+       align-items: center;
+        /* This property is use for making elements align  */
+   }    
+   
+   #item1{
+    order: 2;
+   }
+
+   #item3{
+    order: 3;
+   }
+   /* Will appear in the last in the container who have higher order  */
+
+   #item2{
+    flex-grow: 3;
+   }
+
+   #item4{
+    flex-grow: 1;
+   }
+   /* flex grow is use for expanding items  */
+
+   #item5{
+    flex-shrink: 3;
+    /* flex-shrink helps in responsiveness , item who have grater value will shrink more */
+    align-self:flex-start;
+    align-self: center;
+    align-self: flex-end;
+    /* This is how we can align them by using align-self: :  */
+   } 
+
+   #item6{
+    flex-basis: 160px; 
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height */
+            /* make sure that item width or height is not defined , in this code they are already defined so the property is not working  */
+   }
+
+    .item{
+        background-color: tomato;
+        margin: 6px;
+        padding: 3px;
+        border: 2px solid black;
+        width: 150px;
+        height: 150px; 
+    }
+
+    </style>
+</head>
+<body>
+    <h1>This is Flex box Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div>
+    </div>
+</body>
+</html>
+<!-- You can check the container by commenting all the id items  -->

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alingment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantata+One&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    /* *{} means select ALL elements on the page.So this rule applies to every tag — div, p, h1, img, input, everything.  */
+    body {
+        font-family: cursive;
+        background-color: rgb(248, 144, 144);
+    }
+
+    .container {
+        width: 600px;
+        border: 6px solid red;
+        margin: 50px auto;
+        /* auto means from right and left the margin will set in the center  */
+        border-radius: 30px;
+        background-color: rgb(252, 186, 176);
+        overflow: auto;
+        padding: 20px ;
+    }
+
+    .items {
+        border: 3px solid red;
+        padding: 20px 20px;
+        margin: 20px 20px;
+        border-radius: 30px;
+        background-color: rgb(243, 237, 237);
+
+    }
+
+    #fruits {
+        float: left;
+        width: 41%;
+        /* float in CSS is used to place an element to the left or right of its container, so other content can wrap around it. */
+    }
+
+    #vegies {
+        float: left;
+        width: 41%;
+    }
+
+    #nonveg {
+        float: left ;  
+        /* clear: left; */
+        /* clear means that if any element like vegies,fruits who is flotting on the left side don't overlap on nonveg   */
+        /* clear :right ;  */
+        /* clear :both ;  */
+        width: 41%;
+    }
+
+    #glasses {
+        float: left ;
+        width: 41%;
+    }
+
+    p {
+        /* text-align: justify;  */
+         text-align: left;  
+         /* text-align: right;   */
+        /* text-align: center; */
+    }
+
+    h1 {
+        margin: 20px auto;
+        width: 400px;
+        font-family: "Cantata One", serif;
+        font-weight: 400;
+    }
+
+    h3 a {
+        color: black;
+        text-decoration: none;
+        /* text-decoration: none; helps to remove the bottom line from the text ,for better understanding you can commentout this and check */
+    } 
+
+    a:hover{
+        color: rgb(207, 0, 162);
+    }
+
+    .para{
+        font-family: "Cookie", cursive;
+    }
+
+    .container h3{
+        border: 2px solid red;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .container h3:hover{
+        color: rgb(207, 0, 162);
+        background-color: #00fff2;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <h1>Welcome to my store</h1>
+        <div id="fruits" class="items">
+            <h3><a href="https://www.fruits.co/" target="_blank">Fruits</a></h3>
+            <p id="fruitspara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima
+                quae sed fugiat, laudantium atque recusandae nisi sequi ipsa temporibus dolorem praesentium magni omnis.
+                Similique consequatur culpa corrupti possimus doloribus?</p>
+        </div>
+        <div id="vegies" class="items">
+            <h3>Vegies</h3>
+            <p id="vegiespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima
+                quae sed fugiat, laudantium atque recusandae nisi sequi ipsa temporibus dolorem praesentium magni omnis.
+                Similique consequatur culpa corrupti possimus doloribus?</p>
+        </div>
+        <div id="nonveg" class="items">
+            <h3>Nonveg</h3>
+            <p id="nonvegpara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima
+                quae sed fugiat, laudantium atque recusandae nisi sequi ipsa temporibus dolorem praesentium magni omnis.
+                Similique consequatur culpa corrupti possimus doloribus?</p>
+        </div>
+        <div id="glasses" class="items">
+            <h3>Glasses</h3>
+            <p id="glassespara" class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam minima
+                quae sed fugiat, laudantium atque recusandae nisi sequi ipsa temporibus dolorem praesentium magni omnis.
+                Similique consequatur culpa corrupti possimus doloribus?</p>
+        </div>
+    </div>
+</body>
+
+</html>

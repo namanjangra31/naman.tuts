@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            border: 2px solid red;
+            background-color: rgb(233, 252, 252);
+            height: 3000px;
+        }
+        
+        .box {
+            display: inline-block;
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            padding: 10px;
+            background: white;
+        }
+
+        /* Sticky */
+        #box1 {
+            position: sticky;
+            top: 5px;
+            background: yellow;
+        }/* Sticky is when we need to fix the position of an element and stick on the screen while scrolling  */
+
+        /* Fixed */
+        #box2 {
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+            background: lightgreen;
+        } /* Fixed is when we need to fix position of an element anywhere but stick on the screen while scrolling  */
+
+        /* Relative */
+        #box3 {
+            position: relative;
+            left: 50px;
+            top: 40px;
+            background: lightblue;
+        }/* Relative is when we need to set the position of an element from its own position  */
+
+        /* Absolute */
+        #box4 {
+            position: absolute;
+            left: 25px;
+            top: 700px;
+            background: pink;
+        }/* Absolute is used when we need to set the position of an element from its first parent which is container */
+
+        .spacer {
+            height: 300px;
+            background: lightgray;
+            text-align: center;
+            line-height: 300px;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="spacer">
+            Scroll Down
+        </div>
+
+        <div class="box" id="box1">
+            Sticky
+        </div>
+
+        <div class="box" id="box2">
+            Chat with us
+        </div>
+
+        <div class="box" id="box3">
+            Relative
+        </div>
+
+        <div class="box" id="box4">
+            Absolute
+        </div>
+
+    </div>
+
+</body>
+</html>

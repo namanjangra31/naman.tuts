@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+</head>
+<style>
+
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    /* 1st Ex*/
+    /* div p{
+        background-color: darkgreen;
+        color: yellow;
+        font-style: italic;
+    } */
+    /* If we select "div p" it will affect all the p inside div  */
+
+    /* 2nd Ex*/
+    /* div li p{
+        background-color: darkgreen;
+        color: yellow;
+        font-style: italic;
+    } */
+    /* "div li p" will only affect "div li p" */
+
+    /* 3rd Ex*/
+    /* div > p{
+        background-color: darkgreen;
+        color: yellow;
+        font-style: italic;
+    } */
+    /* ">" This mean direct child of div */
+
+    div + p{
+        background-color: darkgreen;
+        color: yellow;
+        font-style: italic;
+    }
+    /* "+" - The "p" whose previous sibling is "div" will affects */
+
+</style>
+<body>
+    <h1>This is more on selector</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li><p>This para is inside ul , li</p></li>
+                <li>This will not affect by 2 Ex</li>
+                <p>This is paragrph inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outer most paragraph</p>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries</title>
+</head>
+<style>
+    .box{
+        background-color: red;
+        text-align: center;
+        font-size: 50px;
+        color: whitesmoke;
+        display: none;
+    }
+
+    /* This is how we set width for screen  */
+    @media only screen and (max-width:300px){
+        #box1{
+            display: block;
+            background-color: green;
+        }
+    }
+
+    @media only screen and (max-width: 500px) and (min-width: 300px){
+        #box2{
+            display: block;
+            background-color: blue;
+        }
+    }
+
+    @media only screen and (max-width: 800px) and (min-width: 500px){
+        #box3{
+            display: block;
+            background-color: yellow;
+            color: black;
+        }
+    }
+    
+    @media only screen and (min-width:800px){
+        #box4{
+            display: block;
+            background-color: orange;
+        }
+    }
+   
+</style>
+<body>
+   <div class="box" id="box1">I am an iphone</div>
+   <div class="box" id="box2">I am an Tablet</div>
+   <div class="box" id="box3">I am an computer</div>
+   <div class="box" id="box4">I am an Wide screen computer</div>
+</body>
+</html>
+<!-- @media is use for setting screen's responsivness -->
+ <!-- "@media only screen and" is only a syntax  -->
+<!-- (max-width: 500px) and (min-width: 300px) the "and" btw them is imp to write  -->

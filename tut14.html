@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model padding border margin </title>
+</head>
+<style>
+    body {
+        background-color: rgb(198, 186, 255);
+    }
+    .para{
+        background-color: rgb(160, 200, 236);
+        border: solid rgb(0, 0, 70) 5px;
+        /* we can set margin/padding for top,bottom,left,right like this, same for margin also!  */
+        /* padding-top: 20px;  */
+        /* padding-left: 10px;  */
+        /* padding-bottom: 6px; */
+        /* padding-right: 10px;  */
+        /* padding: 20px 10px 6px 10px; padding = top right bottom left  */
+        /* padding: 40px 40px; padding x(top,bottom) y(right , left)  */
+        
+         padding: 40px; 
+        margin: 20px;
+        width: 400px;
+        border-radius: 30px;
+        box-sizing: border-box; 
+        /* This is used for not changing the adjusted width :200px while changing the padding and margin */
+
+        }
+</style>
+
+<body>
+
+    <div class="para">
+        <h3>This is the heading </h3>
+        <p id="first">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima debitis fugit excepturi dolorum sequi et
+            cumque omnis odit magnam mollitia ipsam, harum quidem, nemo
+        </p>
+        </div>
+        <div class="para">
+            <h3>This is the heading </h3>
+            <p id="second">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima debitis fugit excepturi dolorum sequi
+                et cumque omnis odit magnam mollitia ipsam, harum quidem, nemo
+            </p>
+            </div>
+            <div class="para">
+                <h3>This is the heading </h3>
+                <p id="third">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima debitis fugit excepturi dolorum
+                    sequi et cumque omnis odit magnam mollitia ipsam, harum quidem, nemo
+                </p>
+            </div>
+</body>
+</html>

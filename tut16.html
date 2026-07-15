@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors & more designing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<style>
+   
+    .btn{
+        background-color: red;
+        margin: 15px;
+        padding: 10px;
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+        /* When the cursor is touching on the submit button there is a arrow but on touching the clickme there is a hand to take the hand pointer on submit button we are using this property = cursor: pointer;  */
+        border-radius: 10px;    
+    }
+        a{
+        font-size: 16px;
+    }
+    a:hover{
+       color: red;
+        background-color: rgb(219, 255, 75);
+    } 
+    /* hover is when we take cursor on the element  */
+    a:active{
+        background-color: pink;
+    }
+    /* active is when we click on the element and it becomes pink  */
+    /*.btn:hover{
+        color: yellow;
+        background-color: rgb(255, 38, 38);
+    } you can commentout and check , this is only for showing that psueudo selectors can also perform with hover */ 
+
+    .container {
+        border: red solid 5px;
+        background-color: #e1ffdc;
+        padding-top: 13px;
+        padding-left: 30px;
+        padding-right: 13px;
+        padding-bottom: 60px;
+        margin: 50px auto;
+        width: 700px;
+    }
+    p{
+         font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+    }
+</style>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is the heading</h3>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae necessitatibus modi nulla explicabo, repellat aspernatur possimus perferendis facere minus voluptatibus nam deleniti fuga magni. Corporis voluptate ipsam aut possimus repellendus?</P>
+        <br><br>
+        <a href="https://google.com" target="_blank" class="btn">Click me</a>
+    <button class="btn">Submit</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>height,width,borders and BG</title>
+    <style>
+        #first {
+            background-color: red;
+            height: 120px;
+            width: 500px;
+            border-color: green;
+            border-style: solid;
+            border-width: 8px;
+            /* this is shortcut = border: green,solid,4px;*/
+            border-radius: 30px;
+            text-align: center;
+           line-height: 100px;
+        }
+
+        #second {
+            background-color: green;
+            height: 120px;
+            width: 500px;
+            border-top: 8px solid red;
+            border-right: 8px solid blue;
+            border-left: 8px solid violet;
+            border-bottom: 8px solid yellow;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            text-align: center;
+            line-height: 100px;
+        }
+
+        #third {
+            height: 700px;
+            width: 500px;
+            background-image: url("data:image/png;base64,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");
+            border: 2px solid;
+
+             background-repeat: no-repeat; 
+            /* this is for no repeatation of img by commenting this you can check , can check :repeat-x and y*/
+              /* background-position: 200px 110px;   */
+            /* background-position: top center; = x center y top  */
+            /* background-position: 50px top; = x 50 y top  */
+            /* background-position: 13px 50px;  */
+            /* background-position: right center;  */
+            /* background-position: top left ;  */
+             background-position: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <h3>This is first Heading</h3>
+    <p id="first">This is tut13 and the first paragraph</p>
+    <h3>This is second Heading</h3>
+    <p id="second">This is tut13 and the second paragraph</p>
+    <h3>This is third Heading</h3>
+    <p id="third">This is tut13 and the third paragraph</p>
+</body>
+</html>

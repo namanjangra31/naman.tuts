@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility & Z index</title>
+</head>
+<style>
+
+    .box{
+        width: 100px;
+        height: 100px;
+        border: 2px black solid;
+    }
+
+    #box1{
+        background-color: red;
+        position: relative;
+        left: 275px;
+        top: 50px;
+        z-index: 2;
+    }
+
+    #box2{
+        background-color: yellow;
+        position: relative;
+        left: 250px;
+        z-index: 1;
+    }
+     /* z-index  will work only for position: relative, absolute, fixed or sticky; */
+     /* Elemet who has more z index than the other one will overlap on other first  */
+
+    #box3{
+        background-color: green;
+         visibility: hidden; 
+        /* visibility hidden reserves the place / area of the element  */
+    }
+
+    #box4{
+        background-color: blue;
+          display: none;  
+         /* display none remove allover element from the screen , you can comment out and check */
+    }
+
+    #box5{
+        background-color: deeppink;
+        /* Because of blue box has been removed this pink box takes its place  */
+    }
+
+</style>
+<body>
+    <!-- div.box#box$*4 = dollar refers to counting -->
+     <div class="box" id="box1"></div>
+     <div class="box" id="box2"></div>
+     <div class="box" id="box3"></div>
+     <div class="box" id="box4"></div>
+     <div class="box" id="box5"></div>
+</body>
+</html>

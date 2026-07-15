@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <!-- action is an end point where all the data is submit , here all the data is submitted in backend.php -->
+    <form action="backend.php">
+        <!-- We can make the form without using labels -->
+         <!-- Advantage of using lable is = When we touch on Name : with cursor , then we can see the text area is poping . This helps in making good UX -->
+          <br>
+        <label for="name">Name :</label>
+            <input type="text" name="MyName" id="name">
+        <!-- for and id must be same  -->
+         <br>
+        <br>
+        <div>
+            Roll no.: <input type="text" name="Myrollno.">
+        </div>
+        <br>
+        <div>
+            Sem : <input type="number" name="Mysem">
+        </div>
+        <br>
+        <div>
+            E mail : <input type="email" name="Myemail">
+        </div>
+        <br>
+        <div>
+            DOB : <input type="date" name="MyDate">
+        </div>
+        <br>
+        <div>
+            Are you eligible <input type="checkbox" name="Myeligibility" checked>
+            <!-- if you want that checkbox is always stays checked use checked -->
+        </div>
+        <br>
+        <div>
+            Gender : Male<input type="radio" name="Mygender"> Female<input type="radio" name="Mygender"> Other<input
+                type="radio" name="Mygender">
+        </div>
+        <!-- Because of same names "Mygender" in radio we can choose only one input  -->
+        <br>
+        <div>
+            <input type="button" value="Submit here">
+            <input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            Write about youself : <br><textarea name="Mytextarea" cols="40" rows="10"></textarea>
+            <!-- textarea is not a input type notice! -->
+        </div>
+        <br>
+        <div>
+            <label for="car"> Car :</label>
+            <select name="Mycar" id="car">
+                <option value="Scorpio" selected> Scorpio</option>
+                <option value="Thar"> Thar</option>
+                <option value="bolero"> bolero</option>
+            </select>
+        </div>
+    </form>
+</body>
+</html>
+<!-- div helps in separation  -->
+<!-- there are more types of input type -->

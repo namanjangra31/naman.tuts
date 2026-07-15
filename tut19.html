@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Display Property Example</title>
+
+  <style>
+    /* BLOCK example */
+    .section {
+      display: block;
+      width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      border: 3px solid red;
+      /* A block element takes all the space  */
+    }
+
+    /* INLINE example */
+    .inline p{
+      display: inline; 
+      border: red solid 2px; 
+      font-weight: bold;
+       width: 300px;  
+       height: 200px;  
+      padding: 2px;
+      /* Now because of having display:inline;the width and height can't be set  */
+      /* An inline element take as much as required space  */
+    }
+
+    /* INLINE-BLOCK example */
+    .card {
+      display: inline-block;
+      height: 20px;
+      width: 150px;
+      padding: 15px;
+      margin: 10px;
+      background: lightgray;
+      border: 2px solid black;
+      text-align: center;
+      /* It takes both the roles  */
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- BLOCK -->
+  <div class="section">
+    <h2>Block Element</h2>
+    <p>
+      This entire red box is a <b>block element</b>.
+      It takes full width and starts on a new line.
+    </p>
+  </div>
+
+  <!-- INLINE -->
+   <div class="inline">
+  <p>
+    This is normal text and
+    This is inside the same line.
+  </p>
+  </div>
+
+  <!-- INLINE-BLOCK -->
+  <div style="text-align:center;">
+    <div class="card">Card 1</div>
+    <div class="card">Card 2</div>
+    <div class="card">Card 3</div>
+  </div>
+
+</body>
+</html>
+<!-- This is a example code for display property for better understanding from chatgpt  -->
