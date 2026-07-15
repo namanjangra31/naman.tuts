@@ -1,3 +1,4 @@
 # learned tutorials
-This is my first github repository.
+This is my learning tutorials.
+<br>
 Author - Naman Jangra 
